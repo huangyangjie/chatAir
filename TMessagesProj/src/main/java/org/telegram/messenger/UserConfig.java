@@ -140,6 +140,7 @@ public class UserConfig extends BaseController {
     public String apiServerClaude = defaultApiServerClaude;
 
     public String apiKeyDeepseek;
+    public String defaultApiKeyDeepseek = "sk-1eb782b2a2014e3ab27a16952da741bd";
     public String apiServerDeepseek = defaultApiServerDeepseek;
 
     public boolean streamResponses = defaultStreamResponses;
@@ -521,7 +522,8 @@ public class UserConfig extends BaseController {
                 apiKeyClaude = preferences.getString("apiKeyClaude", "");
                 apiServerClaude = preferences.getString("apiServerClaude", defaultApiServerClaude);
 
-                apiKeyDeepseek = preferences.getString("apiKeyDeepseek", "");
+//                apiKeyDeepseek = preferences.getString("apiKeyDeepseek", defaultApiKeyDeepseek);
+                apiKeyDeepseek = defaultApiKeyDeepseek;
                 apiServerDeepseek = preferences.getString("apiServerDeepseek", defaultApiServerDeepseek);
             }
 
